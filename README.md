@@ -28,3 +28,12 @@ The website will be developed using _HTML_, _Javascrip_t and _CSS_. This project
 - Mohammad Adnan Saleh Alazzam (Working on Javascript, General Assistant)
 
 - Naji A. Albatayneh (Team Leader, Help Working on Javascript, Help Styling the website using css, Creating the HTML docs, Content Editor, General Assistant)
+
+
+
+## User Stories
+
+1. As a homeowner i would like to submit a maintenance request to the system, so any service provider is intended to connect with me can contact me using my contact information.
+1. As a home owner i would like to be able to search for any available service provider matching my request.
+1. As a service provider, i would like to be allowed to register myself is the system, so any homeowner that have a maintenance request can connect with me using my contact information.
+1. As a service provider, i would like to be able to look for any maintenance requests from any homeowner that match my availability, price, craft and address.
