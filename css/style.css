@@ -1,96 +1,168 @@
 *{
     box-sizing: borderbox;
 }
+div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .topBar{
-    position: absolute;
-    width: 100%;
-    height: 60px;
+    width: 100%; 
+    height: 30px;
     text-align: center;
-    background-color:#536039;
-    color: white;
-    
-    
-
-
+    background-color:#5d635e;
+    color:#c6d4c8;  
 }
 .topBar p{
     font-size: small;
-
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
-.topBar a{
+.topBar p a{
     text-decoration: none;
     font-size: small;
-    color: white;
+    color:#c6d4c8;
 }
-
-
 
 header{
-    position: absolute;
     width: 100%;
-    background-color:#608613;
-    
-
+    background-color: #7FB685;
+    margin-left: auto;
+    margin-right: auto;
 }
 .head{
-    position: relative;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
 }
-
-.head img {
-    position: relative;
-    top:150px;
-    margin-left: 50px;
-
-}
-
-.head h1{
-    font-family: 'Akaya Kanadaka', cursive;
-    margin-left: 200px;
-    margin-top: 100px;
-}
-
-.head h6{
-    margin-left: 210px;
-    font-size: 15px;
-    top:10px;
-}
-
-.head ul{
-    position: absolute;
+.head ul li {
     display: inline-block;
-    right: 20px;
-    top: 60px;
-
-}
-
-
-.head ul li{
-    text-decoration: none;
+    text-decoration: none; 
 }
 .head ul li img{
-    
-    display: inline-block;
-    top: 0%;
-
+    height: 20px;
+    width: 20px;
 }
+.head img {
+    position: relative;
+    top:100px;
+    margin-right: 10px;
+}
+.head h1{
+    font-family: 'Akaya Telivigala', cursive;
+    padding: 10px;
+    left:100px;
+    position: relative;
+    color: #27462b;
+}
+.head h6{
+    font-family: 'Akaya Telivigala', cursive;
+    padding: 10px;
+    font-size: 15px;
+    left:100px;
+    position: relative;
+    color:#27462b;
+}
+
 .navigation {
     position:relative ;
     right: 0px;
-
+    width: 90%;
 }
-.navigation ul li{
+.navigation nav ul li{
     position: relative;
     display: inline-block;
-    float: right;
+    left:45%;
     top: 0px;
-    padding: 20px;
-    margin-right: 40px;
-    
-    
+    padding: 10px;
+    margin-right: 20px;
+    font-family:cursive;
+    color:#27462b; 
 }
 .navigation a{
     text-decoration: none;
-    color: #1b1f13;
+    color:#27462b;
     font-size: 20px;
 }
+
+footer{
+    background-color: #7FB685;
+    height: 150px;
+}
+
+.socialLink{
+    clear: both;
+    right: 20px;
+    float:right;
+}
+.socialLink li{
+    text-decoration: none;
+    display: inline-block;
+  
+}
+.socialLink li img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.footerDiv{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerDiv p{
+    float: left;
+    padding:10px;
+    margin-top: 80px;
+    color: #27462b;
+}
+.footerDiv ul{
+    float: left;
+    padding:10px;
+    margin-left: 300px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 25px;
+}
+.footerDiv ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 10px; 
+}
+.footerDiv img{
+    float: left;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 85px;  
+}
+.footerDiv ul li a{
+    text-decoration: none;
+    color:#27462b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
