@@ -1,0 +1,120 @@
+*{box-sizing: border-box;}
+.column{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+    font-family: 'Cairo', sans-serif;
+}
+.Banner{
+    clear: both;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
+.Projects{
+    clear: both;
+}
+main div{
+    width: 90%;
+}
+video{
+    margin-top: 50px;
+}
+.first3 figure{
+    display: inline-block;
+    width: 25%;
+    background-color: cadetblue;
+    padding: 5px;
+}
+.first3,.scnd3{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scnd3 figure{
+    display: inline-block;
+    width: 25%; 
+    background-color: cadetblue;
+    padding: 5px;
+}
+div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.request label{
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+}
+.sec3 label{
+    width: 50%;
+}
+ .request ul{
+    list-style-type: none;
+}
+.provider ul{
+    list-style-type: none;
+}
+.provider label{
+    display: inline-block;
+    width: 125%;
+    text-align: left;
+}
+.request input , textarea, select{
+    width: 300px;
+}
+main{
+    background-color: #f4f9f9;
+}
+.provider fieldset{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#FFFFFF;
+    opacity: .9;
+}
+.request fieldset{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#FFFFFF;
+    opacity: .9;
+}
+.provider{
+    background-image: url("https://www.houseology.com.au/wp-content/uploads/2017/02/Should-you-Hire-a-Professional-for-Home-Maintenance.jpg");
+}
+.provider section{
+padding-top: 5px;
+padding-left: 40px;
+padding-right: 50px;
+}
+.provider h2,p{
+    padding-left: 20px;
+}
+.contract{
+    padding-top: 10px;
+}
+.button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.request{
+    background-image:url("https://www.gnhlumber.com/wp-content/uploads/2018/01/home-maintenance-resolutions-2018.jpg");
+}
+.request h3{
+    margin-left: 100px;
+}
+.request h2{
+    margin-left: 90px;
+}
+.msec1 *{
+    margin-top: 10px;
+}
+.p1{
+    margin-left: 50px;
+}
+.msec2 *{
+    margin-top: 10px;
+}
