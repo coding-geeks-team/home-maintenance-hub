@@ -1,5 +1,9 @@
+
+
 // let formEl=document.getElementById('providerForm');
-let divEl = document.getElementById('showdata');
+
+let divEld = document.getElementById('x');/////////////
+console.log(divEld);
 let username=document.getElementById('name');
 let contactnumber=document.getElementById('contact');
 let emailEl=document.getElementById('email');
@@ -8,7 +12,7 @@ let craftEl=document.getElementById('craft');
 let contractEl=document.getElementById('contract');
 let buttonEl=document.getElementById('button');
 let buttonEl2=document.createElement('button');
-divEl.appendChild(buttonEl2);
+divEld.appendChild(buttonEl2);//Holy error
 buttonEl2.textContent = 'to show offers click here';
 buttonEl2.hidden=true;
 let verify=document.getElementById('verify');
@@ -85,8 +89,8 @@ function submitButton (event){
   event.preventDefault();
 
   if( inputV === verify.value){
-  //     alert('your form submit ');
-  //     new Request(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category1.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
+    //     alert('your form submit ');
+    //     new Request(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category1.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
     new ProviderServiceForm (username.value,contactnumber.value,emailEl.value,selectCity.value,craftEl.value,contractEl.value);
     confirm ('Thank you,  we have received your information and it is being processed');
 
@@ -96,28 +100,13 @@ function submitButton (event){
   }
 }
 
-
-
-// while (inputV !== verify.value){
-
-//   alert('please try again');
-//   break;
-// }
-
-
-
-// setFormData();
-
-
-
-
 buttonEl.addEventListener('click',submitButton);
 
 
 
 function render (renderedObj){
   let fieldsetEl=document.createElement('fieldset');
-  divEl.appendChild(fieldsetEl);
+  divEld.appendChild(fieldsetEl);
   let h3El=document.createElement('h3');
   fieldsetEl.appendChild(h3El);
   h3El.textcontent= ` ${renderedObj.craft}  `;
@@ -136,56 +125,45 @@ function render (renderedObj){
   ulEl.appendChild(liEl3);
   liEl3.textContent=`${renderedObj.email}`;
 
-
   let liEl4=document.createElement('li');
   ulEl.appendChild(liEl4);
   liEl4.textContent=`${renderedObj.city}`;
 
-
   let liEl5=document.createElement('li');
   ulEl.appendChild(liEl5);
   liEl5.textContent=`${renderedObj.contract}`;
-
 
   let liEl6=document.createElement('li');
   ulEl.appendChild(liEl6);
   //here is bug !!!!
   liEl6.textContent=`${availableDayes}`;
 
-
   let liEl7=document.createElement('li');
   ulEl.appendChild(liEl7);
   liEl7.textContent=`${availableShift}`;
-
-
-
 }
 
-
-function showButton(event)
-{
+/////////////Show Button Clicking/////////
+function showButton(event){
   event.preventDefault();
-
   for (let i=0 ; i<arrOfObject.length;i++){
-
-    render(arrOfObject[i]);}
-
+    render(arrOfObject[i]);
+  }
   buttonEl2.removeEventListener('click',showButton);
 }
 
-
+/////////////B2 Event Listener////////////
 buttonEl2.addEventListener('click',showButton);
 
-
+//////////Get form Local Storage////////////
 let getData=[];
 function getFormData () {
-
-
   getData = JSON.parse(localStorage.getItem('formData'));
   if (getData)
   { arrOfObject= getData;}
-
 }
-
 getFormData();
+
+
+
 
