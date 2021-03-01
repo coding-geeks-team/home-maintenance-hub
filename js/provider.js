@@ -11,7 +11,7 @@ let buttonEl2=document.createElement('button');
 divEl.appendChild(buttonEl2);
 buttonEl2.textContent = 'to show offers click here';
 buttonEl2.hidden=true;
-// let verify=document.getElementById('verify');
+let verify=document.getElementById('verify');
 
 let arrOfObject =[];
 let availableDayes=[];
@@ -78,26 +78,38 @@ function setFormData(){
 
 
 
-// let inputV='1234';
+let inputV='1234';
 
 function submitButton (event){
 
-
   event.preventDefault();
 
-  // while (inputV !== verify.value){
+  if( inputV === verify.value){
+  //     alert('your form submit ');
+  //     new Request(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category1.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
+    new ProviderServiceForm (username.value,contactnumber.value,emailEl.value,selectCity.value,craftEl.value,contractEl.value);
+    confirm ('Thank you,  we have received your information and it is being processed');
 
-  //   alert('please try again');
-  //   break;
-  // }
-  new ProviderServiceForm (username.value,contactnumber.value,emailEl.value,selectCity.value,craftEl.value,contractEl.value);
-
-  confirm ('Thank you,  we have received your information and it is being processed');
-  // setFormData();
-
-  if (arrOfObject){ buttonEl2.hidden = false; }
-
+    if(arrOfObject){buttonEl2.hidden=false;}
+  }else{
+    alert('please try again ');
+  }
 }
+
+
+
+// while (inputV !== verify.value){
+
+//   alert('please try again');
+//   break;
+// }
+
+
+
+// setFormData();
+
+
+
 
 buttonEl.addEventListener('click',submitButton);
 
