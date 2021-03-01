@@ -54,35 +54,35 @@
                                     <span>Name: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="text" id="name" name="username">
+                                <input type="text" id="name" name="username" required>
                             </li>
                             <li>
                                 <label for="contact">
                                     <span>Contact Number: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="tel" id="contact" name="contactnumber">
+                                <input type="tel" id="contact" name="contactnumber" required>
                             </li>
                             <li>
                                 <label for="email">
                                     <span>Email: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                             </li>
                             <li>
                                 <label for="address">
                                     <span>Address: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <textarea type="textarea" id="address" name="address"></textarea>
+                                <textarea type="textarea" id="address" name="address" required></textarea>
                             </li>
                             <li>
                                 <label for="city">
                                     <span>City: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <select name="city" id="city">
+                                <select name="city" id="city" required>
                                     <option value="Amman">Amman</option>
                                     <option value="Irbid">Irbid</option>
                                     <option value="Zarqa">Zarqa</option>
@@ -102,7 +102,7 @@
                                     <span>How did you hear about us? </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <select name="reach" id="reach">
+                                <select name="reach" id="reach" required>
                                     <option value="TV">TV</option>
                                     <option value="Radio">Radio</option>
                                     <option value="Newspaper">Newspaper</option>
@@ -122,7 +122,7 @@
                                     <span>Service Category: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <select name="category" id="category">
+                                <select name="category" id="category" required>
                                     <option value="Electrical">Electrical</option>
                                     <option value="Painting">Painting</option>
                                     <option value="Plumbing">Plumbing</option>
@@ -137,28 +137,28 @@
                                     <span>Service Discription: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <textarea type="textarea" id="discription" name="discription"></textarea>
+                                <textarea type="textarea" id="discription" name="discription" required></textarea>
                             </li>
                             <li>
                                 <label for="date">
                                     <span>Appointment Date: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="date" id="date" name="date">
+                                <input type="date" id="date" name="date" required>
                             </li>
                             <li>
                                 <label for="mincost">
                                     <span>Minimum Cost: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="number" id="mincost" name="mincost">
+                                <input type="number" id="mincost" name="mincost" min="0" required>
                             </li>
                             <li>
                                 <label for="maxcost">
                                     <span>Maximum Cost: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="number" id="maxcost" name="maxcost">
+                                <input type="number" id="maxcost" name="maxcost" min="0" required>
                             </li>
                         </ul>
                     </section>
@@ -170,7 +170,7 @@
                                 <strong><abbr title="required">*</abbr></strong>
                             </label>
                             <img src="" alt="Verify">
-                            <input type="text" id="verify" name="verify">
+                            <input type="text" id="verify" name="verify" required>
                         </p>
                         <button id="submit" type="submit">Submit Request</button>
                     </section>

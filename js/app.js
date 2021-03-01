@@ -18,6 +18,7 @@ let divEl=document.getElementById('ul');
 divEl.appendChild(bouttonEl2);
 bouttonEl2.textContent='SHOW YOUR INFO CLICK ME ';
 bouttonEl2.hidden=true;
+let verifyIn=document.getElementById('verify');
 
 
 
@@ -35,6 +36,7 @@ function Request(name,contact,email,address,city,reach,category,discription,date
     this.minCost=minCost;
     this.maxCost=maxCost;
     Request.array.push(this);
+    saveToLocalStorage();
 }
 
 Request.array=[];
@@ -48,70 +50,69 @@ function saveToLocalStorage() {
 
 ///////////////////get from local storage function//////////////////////
    function getFromLocalStorage(){
-
-    
     let getdata=JSON.parse(localStorage.getItem('RequestData'));
     if(getdata){
       Request.array=getdata;
     }
 
    }
+   getFromLocalStorage();
 
 ////////////////////render function////////////////////
-  let liEl;
-  // let renderdobj;
 function render(renderdobj){
   let fieldsetEl =document.createElement('fieldset');
-  divEl.appendchild('fieldsetEl');
+  divEl.appendChild(fieldsetEl);
+
   let h3El=document.createElement('h3');
-  fieldsetEl.appendChild('h3El');
+  fieldsetEl.appendChild(h3El);
   h3El.textcontent=`${renderdobj.category}`;
+
   let ulEl =document.createElement('ul');
   fieldsetEl.appendChild(ulEl);
-  liEl=document.createElement('li');
+
+  let liEl=document.createElement('li');
   ulEl.appendChild(liEl);
   liEl.textContent=`${renderdobj.name}`;
 
- liEl1=document.createElement('li');
-  ulEl1.appendChild(liEl1);
+ let liEl1=document.createElement('li');
+  ulEl.appendChild(liEl1);
   liEl1.textContent=`${renderdobj.contact}`;
 
-  liEl2=document.createElement('li');
-  ulEl2.appendChild(liEl2);
+  let liEl2=document.createElement('li');
+  ulEl.appendChild(liEl2);
   liEl2.textContent=`${renderdobj.email}`;
 
-  liEl3=document.createElement('li');
-  ulEl3.appendChild(liEl3);
+  let liEl3=document.createElement('li');
+  ulEl.appendChild(liEl3);
   liEl3.textContent=`${renderdobj.address}`;
 
-  liEl4=document.createElement('li');
-  ulEl4.appendChild(liEl4);
+  let liEl4=document.createElement('li');
+  ulEl.appendChild(liEl4);
   liEl4.textContent=`${renderdobj.city}`;
 
-  liEl5=document.createElement('li');
-  ulEl5.appendChild(liEl5);
+  let liEl5=document.createElement('li');
+  ulEl.appendChild(liEl5);
   liEl5.textContent=`${renderdobj.reach}`;
 
-  liEl6=document.createElement('li');
-  ulEl6.appendChild(liEl6);
+  let liEl6=document.createElement('li');
+  ulEl.appendChild(liEl6);
   liEl6.textContent=`${renderdobj.discription}`;
 
-  liEl7=document.createElement('li');
-  ulEl7.appendChild(liEl7);
+  let liEl7=document.createElement('li');
+  ulEl.appendChild(liEl7);
   liEl7.textContent=`${renderdobj.minCost}`;
 
-  liEl8=document.createElement('li');
-  ulEl8.appendChild(liEl8);
+  let liEl8=document.createElement('li');
+  ulEl.appendChild(liEl8);
   liEl8.textContent=`${renderdobj.maxCost}`;
-    
-
 
   }
 
-  ////////////////showbutton//////////////
+  ////////////////////////////// showbutton /////////////////////////////////////
+
   function showButton(){
-    getFromLocalStorage();
-    console.log(Request.array);
+    
+    // console.log(Request.array);
     for(let i=0 ; i<Request.array.length ;i++){
       render(Request.array[i]);
     }
@@ -121,20 +122,32 @@ function render(renderdobj){
   
 
 
-////////////////////event function /////////////////////
+//////////////////////////////event function //////////////////////////////////
 
-  function handileSubmit(event){
-    event.preventDefault();
-    //   console.log()
-    new Request(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category1.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
+let num = '1234';
+function handileSubmit(event){
+  event.preventDefault();
 
-    saveToLocalStorage();
+    
+      if( num === verifyIn.value){
+        alert(' Successfully submit ');
+        
+        new Request(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category1.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
+    
+    
+        if(Request.array){bouttonEl2.hidden=false;}
+      
+      }else{
+        alert(' Please try again ');
 
-    if(Request.array){bouttonEl2.hidden=false;}
-  
 
-     
-   
-
-  }
-  submit1.addEventListener('click',handileSubmit );
+      }
+    
+      
+    }
+    submit1.addEventListener('click',handileSubmit );
+    
+    
+    
+    
+    
