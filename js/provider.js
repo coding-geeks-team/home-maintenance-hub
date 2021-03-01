@@ -9,7 +9,7 @@ let contractEl=document.getElementById('contract');
 let buttonEl=document.getElementById('button');
 let buttonEl2=document.createElement('button');
 divEl.appendChild(buttonEl2);
-buttonEl2.textContent = 'to show your info click here';
+buttonEl2.textContent = 'to show offers click here';
 buttonEl2.hidden=true;
 
 let arrOfObject =[];
@@ -27,6 +27,8 @@ function ProviderServiceForm (name,contact,email,city,craft,contract){
   this.days=days();
   this.shifts=shifts();
   arrOfObject.push(this);
+
+  setFormData();
 
 }
 
@@ -88,13 +90,13 @@ function submitButton (event){
   // setFormData();
 
   if (arrOfObject){ buttonEl2.hidden = false; }
-  setFormData();
+
 }
 
 buttonEl.addEventListener('click',submitButton);
 
 
-let liEl;
+
 function render (renderedObj){
   let fieldsetEl=document.createElement('fieldset');
   divEl.appendChild(fieldsetEl);
@@ -104,7 +106,7 @@ function render (renderedObj){
 
   let ulEl =document.createElement('ul');
   fieldsetEl.appendChild(ulEl);
-  liEl=document.createElement(liEl);
+  let liEl=document.createElement('li');
   ulEl.appendChild(liEl);
   liEl.textContent=`${renderedObj.name}`;
 
@@ -121,18 +123,18 @@ function render (renderedObj){
   ulEl.appendChild(liEl4);
   liEl4.textContent=`${renderedObj.city}`;
 
-  
+
   let liEl5=document.createElement('li');
   ulEl.appendChild(liEl5);
   liEl5.textContent=`${renderedObj.contract}`;
 
-  
+
   let liEl6=document.createElement('li');
   ulEl.appendChild(liEl6);
   //here is bug !!!!
   liEl6.textContent=`${availableDayes}`;
 
-  
+
   let liEl7=document.createElement('li');
   ulEl.appendChild(liEl7);
   liEl7.textContent=`${availableShift}`;
@@ -141,30 +143,28 @@ function render (renderedObj){
 
 }
 
-let renderedObj;
 
 function showButton(event)
 {
   event.preventDefault();
-  getFormData();
+
   for (let i=0 ; i<arrOfObject.length;i++){
 
-    render (arrOfObject[i]);
-
-  }
-
+    render(arrOfObject[i]);}
 }
+
 
 buttonEl2.addEventListener('click',showButton);
 
 
-let getData;
+let getData=[];
 function getFormData () {
 
- 
+
   getData = JSON.parse(localStorage.getItem('formData'));
   if (getData)
   { arrOfObject= getData;}
-}
 
+}
+getFormData();
 
