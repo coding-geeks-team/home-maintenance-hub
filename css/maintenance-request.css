@@ -1,0 +1,179 @@
+*{box-sizing: border-box;
+}
+header div ul{
+    list-style: none;
+}
+header {
+    
+    background-color:#85917A ;
+/*   
+     width: 100%; 
+    height: 25px; */
+    /* text-align: center; */
+    /* font-size: small;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; */
+
+
+}
+footer {
+    background-color:#85917A;
+    list-style: none;
+    /* align-items: center;
+    align-content: center;
+    text-align: center; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#85917A;
+    height: 150px;
+    opacity: 0.8;
+    
+
+}
+
+main {
+    background: #646C78 url("https://www.pymnts.com/wp-content/uploads/2019/08/home-maintenance.jpg") no-repeat fixed 0px 0px;
+    background-size: cover;
+
+}
+body {
+    
+    background-color:#646C78;
+    
+}
+form fieldset {
+    border-radius: 30px;
+}
+.F {
+    border-radius: 30px;
+    border: 10px double #0D1440;
+    background-color:#85917A;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+.SHOWB {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    background-color: #85917A;
+
+}
+.ULF {
+    list-style: none;
+    position: relative;
+    left: 12.5%;
+
+}
+.LI1 {
+    position: relative;
+    left: -25%;
+}
+form ul label {
+    position: relative;
+    left: -8%;
+}
+form ul input {
+    align-content: center;
+    
+    position: relative;
+    left: 0%;
+}
+.n1 {
+    background-color: slategray;
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: 1.7%;
+}
+.c1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: -6%;
+}
+.E1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: 1.7%;
+}
+.t1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: .3%;
+}
+.s1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: 6%;
+}
+.r1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: -6%;
+}
+.ca1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: 3%;
+}
+.t2 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: -7%;
+}
+.d1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: -10%;
+}
+.mi1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: -4%;
+}
+.mi2 {
+    background-color: slategray;
+
+    border-radius: 10px;
+    margin: 2%;
+    position: relative;
+    left: -4.3%;
+}
+.v1 {
+    background-color: slategray;
+
+    border-radius: 10px;
+
+}
