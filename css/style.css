@@ -263,6 +263,10 @@ padding-right: 50px;
 }
 .contact fieldset {
 border: none;
+<<<<<<< HEAD
+width: 400px;
+}
+=======
 }
 =======
 .footerDiv p{
@@ -421,3 +425,4 @@ header{
 
 }
 
+>>>>>>> d29a087898744dc05d094c6b5ef8ff2770d40f80
