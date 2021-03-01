@@ -1,0 +1,117 @@
+body {background-color: #166B8C;
+}
+/* .para1 {margin-left:5%;} */
+
+
+
+.para1 h2{text-align: center;
+color:whitesmoke;}
+.para1 p {max-width: 60%;
+text-align: center;
+margin-left: 8cm;
+color:beige;}
+
+.provider{max-width:60%;
+background-image:url(../images/Water_Heaters_iStock_000024951625_Double-me.jpg);
+background-size: cover;
+background-repeat : no-repeat;
+        background-position: center center;
+        /* background-attachment: fixed;} */
+    align-content: center;
+margin-left: 20%;
+color :#FF0078;
+}
+
+/* 
+.rounded-input {
+    padding:10px;
+    border-radius:10px;
+  } */
+ .bigborder *{align-content: center ;
+text-align: center;
+/* color: #F2134F;} */}
+
+.provider ul {list-style: none;}
+.sec1 ul li {margin-top: 15px;
+     }
+
+     .input {  padding:10px;
+   
+      /* -moz-box-direction: normal; */
+        border: 2px solid rgba(0, 0, 0, 0.6);
+        border-radius:10px;
+    width: 50%;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.06)}
+
+    select {
+        width:80%
+        padding:10px;
+        border-radius:10px;
+      }
+      .sec1 label { display: inline-block;
+
+          text-align: right;
+        
+        
+        width:25%;}
+
+
+        .f2 label {display:inline-block;
+        text-align:left;
+    width:20%; }
+
+
+       .f3 label {width :40%;
+        display:inline-block;
+        text-align:left;
+    }
+
+    .contract {margin-top: 20px;}
+    .contract label {position: relative;top: 10px;}
+.contract input {height: 1cm;}
+      button {
+        border: 2px solid rgba(0, 0, 0, 0.6);
+        /* remove default behavior */
+        appearance:none;
+        -webkit-appearance:none;
+      
+        /* usual styles */
+        padding:10px;
+        border:none;
+        background-color:#FF1E5B;
+        color:#fff;
+        font-weight:600;
+        border-radius:20px;
+        width:30%;
+          }
+.provider li {background-color: #F2F2F2;
+opacity: 80%;}
+    /* .button1{background-color: #F2F2F2;}       */
+
+
+
+        
+
+/* #contact{position: relative;
+left:-29px}
+
+.contactno{
+    position: relative;
+    left:-30px
+}
+      .f2{border: outset;}
+      .f3{border: outset;}
+      
+    #wednesday{position: relative;
+    left:9px;}
+
+    #thursday{position: relative;
+        left: 4px;}
+
+     #friday{position: relative;
+          left: -4.5px;}
+
+          .f2 ul li {margin: 5px;}
+
+     .verify{   border-radius:5px;
+    height: 30px;}      */

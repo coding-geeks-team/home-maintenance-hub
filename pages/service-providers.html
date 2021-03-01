@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Providers | Home Maintenance Hub</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="/css/style.css">
+  
+    <link rel="stylesheet" href="../css/walaaForm.css" >
+
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
 </head>
 <body>
     <header>
@@ -38,52 +41,51 @@
         </div>
     </header>
     <main class="mpro">
-        <div>
+        <div class="para1">
             <img src="" alt="Banner">
             <h2>Register as a Service Provider</h2>
             <p>Home Maintenance Hub is a trusted, reliable, affordable and professional Hub connecting Homeowners and Service Providers in most Jordan's cities for the best experience and quality of service. Please fill out the form completely to register as a service provider, and we will connect you with Homeowners requesting maintenance near you.</p>
         </div>
         <div>
-            <form class="provider" action="">
-            <form action="" id="providerForm">
-                <fieldset>
+            <form class="provider" action="" id="providerForm">
+                <fieldset class="bigborder">
                     <h2>Registration Form</h2>
-                    <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+                    <p> <strong><abbr title="required"></abbr></strong>.</p>
                     <section class="sec1">
                         <h3>Step 1: Tell us about you</h3>
                         <ul>
                             <li>
                                 <label for="name">
                                     <span>Name: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    <strong><abbr title="required"></abbr></strong>
                                 </label>
-                                <input type="text" id="name" name="username">
+                                <input type="text" id="name" name="username"  class="input">
                             </li>
                             <li>
-                                <label for="contact">
+                                <label for="contact" class="contactno">
                                     <span>Contact Number: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    <strong><abbr title="required"></abbr></strong>
                                 </label>
-                                <input type="tel" id="contact" name="contactnumber">
+                                <input type="tel" id="contact" name="contactnumber" class="input">
                             </li>
                             <li>
                                 <label for="email">
                                     <span>Email: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    <strong><abbr title="required"></abbr></strong>
                                 </label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" class="input">
                             </li>
                             <li>
                                 <label for="address">
                                     <span>Address: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    <strong><abbr title="required"></abbr></strong>
                                 </label>
-                                <textarea type="textarea" id="address" name="address"></textarea>
+                                <textarea type="textarea" id="address" name="address" class="input"></textarea>
                             </li>
                             <li>
                                 <label for="city">
                                     <span>City: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    <strong><abbr title="required"></abbr></strong>
                                 </label>
                                 <select name="city" id="city">
                                     <option value="Amman">Amman</option>
@@ -103,7 +105,7 @@
                             <li>
                                 <label for="craft">
                                     <span>Craft: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    <strong><abbr title="required"></abbr></strong>
                                 </label>
                                 <select name="craft" id="craft">
                                     <option value="Electrician">Electrician</option>
@@ -121,7 +123,7 @@
                         <h3>Step 2: Tell us about your availability</h3>
                         <ul>
                             <li>
-                                <fieldset>
+                                <fieldset class="f2">
                                     <legend>Days Availability</legend>
                                     <ul id="weekDayes">
                                         <li>
@@ -136,15 +138,15 @@
                                             <label for="tuesday">
                                             <input type="checkbox" id="tuesday"value="tuesday" name="tuesday">Tuesday</label>
                                         </li>
-                                        <li>
+                                        <li class="d1">
                                             <label for="wednesday">
-                                            <input type="checkbox" id="wednesday" value="wednesday" name="wednesday">Wednesday</label>
+                                            <input  type="checkbox" id="wednesday" value="wednesday" name="wednesday">Wednesday</label>
                                         </li>
-                                        <li>
+                                        <li class="d2">
                                             <label for="thursday">
                                             <input type="checkbox" id="thursday" value="thursday" name="thursday">Thursday</label>
                                         </li>
-                                        <li>
+                                        <li class="d3">
                                             <label for="friday">
                                             <input type="checkbox" id="friday" value="friday" name="friday">Friday</label>
                                         </li>
@@ -156,7 +158,7 @@
                                 </fieldset>
                             </li>
                             <li>
-                                <fieldset>
+                                <fieldset class="f3">
                                     <legend>Shifts Availability</legend>
                                     <ul>
                                         <li>
@@ -177,7 +179,7 @@
                             <li class="contract">
                                 <label for="contract">
                                     <span>Contract & Payment Method: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    <strong><abbr title="required"></abbr></strong>
                                 </label>
                                 <select name="contract" id="contract">
                                     <option value="Per Hour Paymant Contract">Per Hour Paymant Contract</option>
@@ -193,15 +195,16 @@
                         <p>
                             <label for="verify">
                                 <span>Copy the numbers and letters you see below into the text field: </span>
-                                <strong><abbr title="required">*</abbr></strong>
+                                <strong><abbr title="required"></abbr></strong>
                             </label>
                             <img src="" alt="Verify">
-                            <input type="text" id="verify" name="verify">
+                            <input type="text" id="verify" name="verify" class="verify">
                         </p>
-                        <div class="button">
-                        <button type="submit">Submit Registration</button>
+                        <div class="button1">
+
+                            <button type="submit" id ="button">Submit Registration</button>
                     </div>
-                        <button type="submit" id ="button">Submit Registration</button>
+                      
                     </section>
                 </fieldset>
             </form>
