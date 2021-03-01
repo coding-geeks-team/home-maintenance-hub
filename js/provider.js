@@ -11,6 +11,7 @@ let buttonEl2=document.createElement('button');
 divEl.appendChild(buttonEl2);
 buttonEl2.textContent = 'to show offers click here';
 buttonEl2.hidden=true;
+// let verify=document.getElementById('verify');
 
 let arrOfObject =[];
 let availableDayes=[];
@@ -77,13 +78,18 @@ function setFormData(){
 
 
 
-
+// let inputV='1234';
 
 function submitButton (event){
 
 
   event.preventDefault();
 
+  // while (inputV !== verify.value){
+
+  //   alert('please try again');
+  //   break;
+  // }
   new ProviderServiceForm (username.value,contactnumber.value,emailEl.value,selectCity.value,craftEl.value,contractEl.value);
 
   confirm ('Thank you,  we have received your information and it is being processed');
@@ -151,6 +157,8 @@ function showButton(event)
   for (let i=0 ; i<arrOfObject.length;i++){
 
     render(arrOfObject[i]);}
+
+  buttonEl2.removeEventListener('click',showButton);
 }
 
 
@@ -166,5 +174,6 @@ function getFormData () {
   { arrOfObject= getData;}
 
 }
+
 getFormData();
 
