@@ -42,7 +42,7 @@
             <p>Home Maintenance Hub is a trusted, reliable, affordable and professional Hub connecting Homeowners and Service Providers in most Jordan's cities for the best experience and quality of service. Please fill out the form completely to register as a service provider, and we will connect you with Homeowners requesting maintenance near you.</p>
         </div>
         <div>
-            <form action="">
+            <form action="" id="providerForm">
                 <fieldset>
                     <h2>Registration Form</h2>
                     <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
@@ -83,18 +83,18 @@
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
                                 <select name="city" id="city">
-                                    <option value="">Amman</option>
-                                    <option value="">Irbid</option>
-                                    <option value="">Zarqa</option>
-                                    <option value="">Mafraq</option>
-                                    <option value="">Ajloun</option>
-                                    <option value="">Aqaba</option>
-                                    <option value="">Karak</option>
-                                    <option value="">Maan</option>
-                                    <option value="">Tafila</option>
-                                    <option value="">Jerash</option>
-                                    <option value="">Madaba</option>
-                                    <option value="">Azraq</option>
+                                    <option value="Amman">Amman</option>
+                                    <option value="Irbid">Irbid</option>
+                                    <option value="Zarqa">Zarqa</option>
+                                    <option value="Mafraq">Mafraq</option>
+                                    <option value="Ajloun">Ajloun</option>
+                                    <option value="Aqaba">Aqaba</option>
+                                    <option value="Karak">Karak</option>
+                                    <option value="Maan">Maan</option>
+                                    <option value="Tafila">Tafila</option>
+                                    <option value="Jerash">Jerash</option>
+                                    <option value="Madaba">Madaba</option>
+                                    <option value="Azraq">Azraq</option>
                                 </select>
                             </li>
                             <li>
@@ -103,13 +103,13 @@
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
                                 <select name="craft" id="craft">
-                                    <option value="">Electrician</option>
-                                    <option value="">Painting and Decoration</option>
-                                    <option value="">Plumber</option>
-                                    <option value="">Surfaces & Floor</option>
-                                    <option value="">Kitchen</option>
-                                    <option value="">Doors & Windows</option>
-                                    <option value="">Garden & Pool</option>
+                                    <option value="Electrician">Electrician</option>
+                                    <option value="Painting and Decoration">Painting and Decoration</option>
+                                    <option value="Plumber">Plumber</option>
+                                    <option value="Surfaces & Floor">Surfaces & Floor</option>
+                                    <option value="Kitchen">Kitchen</option>
+                                    <option value="Doors & Windows">Doors & Windows</option>
+                                    <option value="Garden & Pool">Garden & Pool</option>
                                 </select>
                             </li>
                         </ul>
@@ -120,34 +120,34 @@
                             <li>
                                 <fieldset>
                                     <legend>Days Availability</legend>
-                                    <ul>
+                                    <ul id="weekDayes">
                                         <li>
                                             <label for="sunday">
-                                            <input type="checkbox" id="sunday" name="sunday">Sunday</label>
+                                            <input type="checkbox" id="sunday" value="sunday" name="sunday">Sunday</label>
                                         </li>
                                         <li>
                                             <label for="monday">
-                                            <input type="checkbox" id="monday" name="monday">Monday</label>
+                                            <input type="checkbox" id="monday" value="monday" name="monday">Monday</label>
                                         </li>
                                         <li>
                                             <label for="tuesday">
-                                            <input type="checkbox" id="tuesday" name="tuesday">Tuesday</label>
+                                            <input type="checkbox" id="tuesday"value="tuesday" name="tuesday">Tuesday</label>
                                         </li>
                                         <li>
                                             <label for="wednesday">
-                                            <input type="checkbox" id="wednesday" name="wednesday">Wednesday</label>
+                                            <input type="checkbox" id="wednesday" value="wednesday" name="wednesday">Wednesday</label>
                                         </li>
                                         <li>
                                             <label for="thursday">
-                                            <input type="checkbox" id="thursday" name="thursday">Thursday</label>
+                                            <input type="checkbox" id="thursday" value="thursday" name="thursday">Thursday</label>
                                         </li>
                                         <li>
                                             <label for="friday">
-                                            <input type="checkbox" id="firday" name="friday">Friday</label>
+                                            <input type="checkbox" id="friday" value="friday" name="friday">Friday</label>
                                         </li>
                                         <li>
                                             <label for="saturday">
-                                            <input type="checkbox" id="saturday" name="saturday">Saturday</label>
+                                            <input type="checkbox" id="saturday" value="saturday" name="saturday">Saturday</label>
                                         </li>
                                     </ul>
                                 </fieldset>
@@ -177,10 +177,10 @@
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
                                 <select name="contract" id="contract">
-                                    <option value="">Per Hour Paymant Contract</option>
-                                    <option value="">Per Shift Payment Contract</option>
-                                    <option value="">Per Day Payment Contract</option>
-                                    <option value="">Lump Sum Payment Contract</option>
+                                    <option value="Per Hour Paymant Contract">Per Hour Paymant Contract</option>
+                                    <option value="Per Shift Payment Contract">Per Shift Payment Contract</option>
+                                    <option value="Per Day Payment Contract">Per Day Payment Contract</option>
+                                    <option value="Lump Sum Payment Contract">Lump Sum Payment Contract</option>
                                 </select>
                             </li>
                         </ul>
@@ -195,10 +195,13 @@
                             <img src="" alt="Verify">
                             <input type="text" id="verify" name="verify">
                         </p>
-                        <button type="submit">Submit Registration</button>
+                        <button type="submit" id ="button">Submit Registration</button>
                     </section>
                 </fieldset>
             </form>
+        </div>
+        <div id="showdata"> 
+            
         </div>
     </main>
     <footer>
@@ -210,6 +213,6 @@
         </ul>
         <img src="" alt="Coding Geeks">
     </footer>
-    
+    <script src="../js/provider.js"></script>
 </body>
 </html>
