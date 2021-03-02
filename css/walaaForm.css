@@ -14,7 +14,7 @@ fieldset {border: hidden;}
 form {
   border: black;
   border-style: solid;
-  background-color: blanchedalmond;
+  background-color: rgb(59, 40, 11);
   position: relative;
   top: 0;
   left: 50%;
@@ -29,7 +29,7 @@ fieldset {
   padding: 0;
   /* border: none; */
 }
-
+form h2 {text-align: center;}
 legend {
   font-weight: 400;
 }
@@ -184,27 +184,19 @@ color:beige;}
   align-content: center;}
   
   
-  /* background-image:url(../images/Water_Heaters_iStock_000024951625_Double-me.jpg);
-background-size: cover;
-background-repeat : no-repeat;
-        background-position: center center; */
-        /* background-attachment: fixed;} */
-        /* background-color: beige;
-   
- */
+ 
 
-/* 
+
 .rounded-input {
     padding:10px;
     border-radius:10px;
-  /* } */
- /* .bigborder *{align-content: center ;
+   } 
+ .bigborder *{align-content: center ;
 text-align: center;
 /* color: #F2134F;} */
+ }
 
-
-
-/* .provider ul {list-style: none;}
+.provider ul {list-style: none;}
 .sec1 ul li {margin-top: 15px;
      }
 
@@ -237,18 +229,18 @@ text-align: center;
 
        .f3 label {width :40%;
         display:inline-block;
-        text-align:left;} */
-    /* }
+        text-align:left;}
+  }
 
     .contract {margin-top: 20px;}
 
     .contract label {position: relative;top: 10px;}
 
-.contract input {height: 1cm;} */ 
+.contract input {height: 1cm;}  
 
 
-
-/* #contact{position: relative;
+/* 
+ #contact{position: relative;
 left:-29px}
 
 .contactno{
@@ -270,4 +262,6 @@ left:-29px}
           .f2 ul li {margin: 5px;}
 
      .verify{   border-radius:5px;
-    height: 30px;}      */ 
+    height: 30px;}      */
+
+    
