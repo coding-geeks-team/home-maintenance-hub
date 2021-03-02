@@ -19,6 +19,18 @@ main div{
     width: 90%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .first3 figure{
     display: inline-block;
     width: 25%;
@@ -36,10 +48,7 @@ main div{
     background-color: cadetblue;
     padding: 5px;
 }
-*{
-    box-sizing: borderbox;
-}
- stylebranch
+
 div{
     width: 90%;
     margin-left: auto;
@@ -263,8 +272,9 @@ padding-right: 50px;
 }
 .contact fieldset {
 border: none;
+width: 400px;
 }
-=======
+
 .footerDiv p{
     float: left;
     margin-top: 60px;
@@ -325,6 +335,7 @@ border: none;
 }
 .list li{
     text-decoration: none;
+}
 
 
 .topBar{
@@ -335,8 +346,6 @@ border: none;
     background-color:#536039;
     color: white;
     
-    
-
 
 }
 .topBar p{
@@ -420,4 +429,3 @@ header{
     font-size: 20px;
 
 }
-
