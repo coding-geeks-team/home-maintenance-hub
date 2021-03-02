@@ -44,8 +44,7 @@
             <p>Home Maintenance Hub is a trusted, reliable, affordable and professional Hub connecting Homeowners and Service Providers in most Jordan's cities for the best experience and quality of service. Please fill out the form completely to register as a service provider, and we will connect you with Homeowners requesting maintenance near you.</p>
         </div>
         <div>
-            <form class="provider" action="">
-            <form action="" id="providerForm">
+            <form action="" class="provider" id="providerForm">
                 <fieldset>
                     <h2>Registration Form</h2>
                     <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
@@ -57,35 +56,35 @@
                                     <span>Name: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="text" id="name" name="username">
+                                <input type="text" id="name1" name="username">
                             </li>
                             <li>
                                 <label for="contact">
                                     <span>Contact Number: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="tel" id="contact" name="contactnumber">
+                                <input type="tel" id="contact1" name="contactnumber">
                             </li>
                             <li>
                                 <label for="email">
                                     <span>Email: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email1" name="email">
                             </li>
                             <li>
                                 <label for="address">
                                     <span>Address: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <textarea type="textarea" id="address" name="address"></textarea>
+                                <textarea type="textarea" id="address1" name="address"></textarea>
                             </li>
                             <li>
                                 <label for="city">
                                     <span>City: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <select name="city" id="city">
+                                <select name="city" id="city1">
                                     <option value="Amman">Amman</option>
                                     <option value="Irbid">Irbid</option>
                                     <option value="Zarqa">Zarqa</option>
@@ -105,14 +104,14 @@
                                     <span>Craft: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <select name="craft" id="craft">
-                                    <option value="Electrician">Electrician</option>
-                                    <option value="Painting and Decoration">Painting and Decoration</option>
-                                    <option value="Plumber">Plumber</option>
+                                <select name="craft" id="craft1">
+                                    <option value="Electrical">Electrician</option>
+                                    <option value="Painting">Painting and Decoration</option>
+                                    <option value="Plumbing">Plumber</option>
                                     <option value="Surfaces & Floor">Surfaces & Floor</option>
                                     <option value="Kitchen">Kitchen</option>
                                     <option value="Doors & Windows">Doors & Windows</option>
-                                    <option value="Garden & Pool">Garden & Pool</option>
+                                    <option value="Garden">Garden & Pool</option>
                                 </select>
                             </li>
                         </ul>
@@ -199,19 +198,17 @@
                             <input type="text" id="verify" name="verify">
                         </p>
                         <div class="button">
-                        <button type="submit">Submit Registration</button>
-                    </div>
-                        <button type="submit" id ="button">Submit Registration</button>
+                            <button type="button" id="button">Submit Registration</button>
+                        </div>
                     </section>
                 </fieldset>
             </form>
         </div>
-        <div id="showdata"> 
+        <div id="x"> 
             
         </div>
     </main>
     <footer>
-        <div>
         <div class="footerDiv">
         <p>Copyright &copy; Home Maintenance Hub, All rights reserved 2021.</p>
         <ul>
@@ -222,6 +219,7 @@
         <img src="" alt="Coding Geeks">
         </div>
     </footer>
-    <script src="../js/provider.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- <script src="/js/provider.js"></script> -->
 </body>
 </html>

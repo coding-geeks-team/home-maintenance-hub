@@ -36,10 +36,7 @@ main div{
     background-color: cadetblue;
     padding: 5px;
 }
-*{
-    box-sizing: borderbox;
-}
- stylebranch
+
 div{
     width: 90%;
     margin-left: auto;
@@ -263,8 +260,9 @@ padding-right: 50px;
 }
 .contact fieldset {
 border: none;
+width: 400px;
 }
-=======
+
 .footerDiv p{
     float: left;
     margin-top: 60px;
@@ -326,6 +324,10 @@ border: none;
 .list li{
     text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fa942a79a3bacdeca3ce736cbc7bd6e28d99b642
 
 .topBar{
     position: absolute;
@@ -335,8 +337,6 @@ border: none;
     background-color:#536039;
     color: white;
     
-    
-
 
 }
 .topBar p{
@@ -420,4 +420,3 @@ header{
     font-size: 20px;
 
 }
-
