@@ -37,6 +37,9 @@ main div{
     padding: 5px;
 }
 
+*{
+    box-sizing: borderbox;
+}
 div{
     width: 90%;
     margin-left: auto;
@@ -229,7 +232,7 @@ padding-right: 50px;
 .provider h2,p{
     padding-left: 20px;
 }
-.contract{
+.contact{
     padding-top: 10px;
 }
 .button{
@@ -262,7 +265,10 @@ padding-right: 50px;
 border: none;
 width: 400px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> contactStyle
 .footerDiv p{
     float: left;
     margin-top: 60px;
@@ -325,7 +331,7 @@ width: 400px;
     text-decoration: none;
 }
 
-
+}
 .topBar{
     position: absolute;
     width: 100%;
@@ -333,7 +339,10 @@ width: 400px;
     text-align: center;
     background-color:#536039;
     color: white;
+<<<<<<< HEAD
     
+=======
+>>>>>>> contactStyle
 
 }
 .topBar p{
@@ -417,3 +426,4 @@ header{
     font-size: 20px;
 
 }
+
