@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/maintenance-request.css">
     <title>Maintenance Request | Home Maintenance Hub</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
@@ -37,73 +38,76 @@
         </div>
     </header>
     <main>
-        <div>
-            <img src="" alt="Banner">
+
+        <div class="Providers">
+            <!-- <img src="" alt="Banner"> -->
             <h2>Request Service</h2>
             <p>Services from Home Maintenance Hub are trusted, reliable, affordable and professional. Please fill out the form completely, and we will connect you with the best service provider near you.</p>
         </div>
-        <div>
-            <form id="requestForm">
+        <div  class="container" >
+            <form id="requestForm" >
                 <fieldset>
                     <h2>Request Form</h2>
-                    <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+                   
                     <section>
                         <h3>Step 1: Tell us about you</h3>
-                        <ul>
-                            <li>
+                        <div class='section'>
+                            <div>
                                 <label for="name" >
-                                    <span>Name: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                   
                                 </label>
-                                <input type="text" id="name1" name="username" required>
-                            </li>
-                            <li>
+                                <input placeholder="Name" class="contact" type="text" id="name1" name="username" required>
+                            
+                            </div>
+                               <div>
                                 <label for="contact">
-                                    <span>Contact Number: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                   
                                 </label>
-                                <input type="tel" id="contact1" name="contactnumber" required>
-                            </li>
-                            <li>
+                                <input placeholder="Contact Number:" class="contact" type="tel" id="contact1" name="contactnumber" required>
+                            
+                               </div>
+                            
+                               <div>
                                 <label for="email">
-                                    <span>Email: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    
                                 </label>
-                                <input type="email" id="email1" name="email" required>
-                            </li>
-                            <li>
-                                <label for="address">
-                                    <span>Address: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <textarea type="textarea" id="address1" name="address" required></textarea>
-                            </li>
-                            <li>
-                                <label for="city">
-                                    <span>City: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <select name="city" id="city1" required>
-                                    <option value="Amman">Amman</option>
-                                    <option value="Irbid">Irbid</option>
-                                    <option value="Zarqa">Zarqa</option>
-                                    <option value="Mafraq">Mafraq</option>
-                                    <option value="Ajloun">Ajloun</option>
-                                    <option value="Aqaba">Aqaba</option>
-                                    <option value="Karak">Karak</option>
-                                    <option value="Maan">Maan</option>
-                                    <option value="Tafila">Tafila</option>
-                                    <option value="Jerash">Jerash</option>
-                                    <option value="Madaba">Madaba</option>
-                                    <option value="Azraq">Azraq</option>
-                                </select>
-                            </li>
-                            <li>
+                                <input placeholder="Email:" class="contact" type="email" id="email1" name="email" required>
+                               </div>
+                            
+                                <div>
+                                    <label for="address">
+                                       
+                                    </label>
+                                    <textarea placeholder="Address:" class="contact" type="textarea" id="address1" name="address" required></textarea>
+                                
+                                </div>
+                                <div>
+                                    <label for="city">
+                                        <span>City: </span>
+                                        
+                                    </label>
+                                    <select class="contact" name="city" id="city1" required>
+                                        <option value="Amman">Amman</option>
+                                        <option value="Irbid">Irbid</option>
+                                        <option value="Zarqa">Zarqa</option>
+                                        <option value="Mafraq">Mafraq</option>
+                                        <option value="Ajloun">Ajloun</option>
+                                        <option value="Aqaba">Aqaba</option>
+                                        <option value="Karak">Karak</option>
+                                        <option value="Maan">Maan</option>
+                                        <option value="Tafila">Tafila</option>
+                                        <option value="Jerash">Jerash</option>
+                                        <option value="Madaba">Madaba</option>
+                                        <option value="Azraq">Azraq</option>
+                                    </select>
+                                </div>
+                        
+                            
                                 <label for="reach">
                                     <span>How did you hear about us? </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    
                                 </label>
-                                <select name="reach" id="reach" required>
+                                <select class="contact" name="reach" id="reach" required>
                                     <option value="TV">TV</option>
                                     <option value="Radio">Radio</option>
                                     <option value="Newspaper">Newspaper</option>
@@ -112,18 +116,18 @@
                                     <option value="Internet Search">Internet Search</option>
                                     <option value="Other">Other</option>
                                 </select>
-                            </li>
-                        </ul>
-                    </section>
+                            
+                        </div>
+                    
                     <section>
                         <h3>Step 2: Tell us about the service you are requesting</h3>
-                        <ul>
-                            <li>
+                        
+                            
                                 <label for="category">
                                     <span>Service Category: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                    
                                 </label>
-                                <select name="category" id="category" required>
+                                <select class="contact" name="category" id="category" required>
                                     <option value="Electrical">Electrical</option>
                                     <option value="Painting">Painting</option>
                                     <option value="Plumbing">Plumbing</option>
@@ -132,58 +136,49 @@
                                     <option value="Doors & Windows">Doors & Windows</option>
                                     <option value="Garden">Garden</option>
                                 </select>
-                            </li>
-                            <li>
+                         
                                 <label for="discription">
-                                    <span>Service Discription: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                 
                                 </label>
-                                <textarea type="textarea" id="discription" name="discription" required></textarea>
-                            </li>
-                            <li>
+                                <textarea placeholder="Service Discription:" class="contact" type="textarea" id="discription" name="discription" required></textarea>
+                         
                                 <label for="date">
                                     <span>Appointment Date: </span>
                                     <strong><abbr title="required">*</abbr></strong>
                                 </label>
-                                <input type="date" id="date" name="date" required>
-                            </li>
-                            <li>
+                                <input class="contact" type="date" id="date" name="date" required>
+                          
                                 <label for="mincost">
-                                    <span>Minimum Cost: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                 
                                 </label>
-                                <input type="number" id="mincost" name="mincost" min="0" required>
-                            </li>
-                            <li>
+                                <input placeholder="Minimum Cost:" class="contact" type="number" id="mincost" name="mincost" min="0" required>
+                         
                                 <label for="maxcost">
-                                    <span>Maximum Cost: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
+                                 
                                 </label>
-                                <input type="number" id="maxcost" name="maxcost" min="0" required>
-                            </li>
-                        </ul>
+                                <input placeholder="Maximum Cost:" class="contact" type="number" id="maxcost" name="maxcost" min="0" required>
+                        
+                        
                     </section>
                     <section>
                         <h3>Step 3: Verify that you are not a ropot</h3>
                         <p>
                             <label for="verify">
-                                <span>Copy the numbers and letters you see below into the text field: </span>
-                                <strong><abbr title="required">*</abbr></strong>
+                               
                             </label>
-                            <img src="" alt="Verify">
-                            <input type="text" id="verify" name="verify" required>
+                            <img class="verify" src="https://thumbs.dreamstime.com/b/wooden-toy-block-36425617.jpg" alt="Verify">
+                            <input placeholder="Copy the numbers and letters you see below into the text field:" class="contact" type="text" id="verify" name="verify" required>
                         </p>
-                        <button id="button" type="submit">Submit Request</button>
+                        <button class="contact" id="button" type="submit">Submit Request</button>
                     </section>
                 </fieldset>
             </form>
         </div>
-        <div id="ul">
-            <!-- listformaddin js -->
-        </div>
-        <div id="x"> 
+      
+        <div id="x" class="ul"> 
             
-        </div>
+            <!-- listformaddin js -->
+        </div>  
     </main>
     <footer>
         <p>Copyright &copy; Home Maintenance Hub, All rights reserved 2021.</p>

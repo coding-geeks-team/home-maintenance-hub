@@ -265,10 +265,8 @@ padding-right: 50px;
 border: none;
 width: 400px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> contactStyle
+
 .footerDiv p{
     float: left;
     margin-top: 60px;
@@ -331,6 +329,8 @@ width: 400px;
     text-decoration: none;
 }
 
+
+
 }
 .topBar{
     position: absolute;
@@ -339,10 +339,7 @@ width: 400px;
     text-align: center;
     background-color:#536039;
     color: white;
-<<<<<<< HEAD
     
-=======
->>>>>>> contactStyle
 
 }
 .topBar p{
