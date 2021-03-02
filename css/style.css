@@ -36,10 +36,7 @@ main div{
     background-color: cadetblue;
     padding: 5px;
 }
-*{
-    box-sizing: borderbox;
-}
- stylebranch
+
 div{
     width: 90%;
     margin-left: auto;
@@ -263,12 +260,9 @@ padding-right: 50px;
 }
 .contact fieldset {
 border: none;
-<<<<<<< HEAD
 width: 400px;
 }
-=======
-}
-=======
+
 .footerDiv p{
     float: left;
     margin-top: 60px;
@@ -424,5 +418,3 @@ header{
     font-size: 20px;
 
 }
-
->>>>>>> d29a087898744dc05d094c6b5ef8ff2770d40f80
