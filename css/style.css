@@ -1,0 +1,431 @@
+
+*{box-sizing: border-box;}
+.column{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+    font-family: 'Cairo', sans-serif;
+}
+.Banner{
+    clear: both;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+.Projects{
+    clear: both;
+}
+main div{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first3 figure{
+    display: inline-block;
+    width: 25%;
+    background-color: cadetblue;
+    padding: 5px;
+}
+.first3,.scnd3{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scnd3 figure{
+    display: inline-block;
+    width: 25%; 
+    background-color: cadetblue;
+    padding: 5px;
+}
+
+div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topBar{
+    width: 100%; 
+    height: 25px;
+    text-align: center;
+    background-color:rgb(230, 39, 72);
+    color:#c6d4c8;  
+}
+.topBar p{
+    font-size: small;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    color: wheat;
+}
+.topBar p a{
+    text-decoration: none;
+    font-size: small;
+    color:wheat;
+}
+
+.head{
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.head img {
+float: left;
+    width: 130px;
+    height: 130px;
+}
+
+.title{
+    float: left;
+    width: 300px;
+    height: 100px;
+    top: 50px;
+}
+
+.title h1{
+    position: relative;
+    top: 40px;
+    margin-left: 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 5px;
+    color: rgb(0, 164, 184);
+}
+.title h6{
+    position: relative;
+    top: 35px;
+    margin-left: 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    padding: 5px;
+    font-size: 12.3px;
+    color:rgb(230, 39, 72);
+}
+
+.navigation {
+    clear: both;
+    position:relative ;
+    width: 90%;
+}
+
+.navigation nav ul{
+    position: relative;
+    left: 420px;
+    
+    width: 700px;
+    height: 40px;
+    
+}
+
+.navigation nav ul li{
+    position: relative;
+    display: inline-block;
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:cursive;
+}
+.navigation a{
+    text-decoration: none;
+    color:rgb(0, 164, 184);
+    font-weight:bold;
+    font-size: large;
+}
+
+.navigation a:hover{
+    text-decoration: none;
+    color:rgb(230, 39, 72);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+footer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#68b0ab;
+    height: 150px;
+    opacity: 0.8;
+}
+.socialLink{
+    clear: both;
+    right: 20px;
+    float:right;
+}
+.socialLink li{
+    text-decoration: none;
+    display: inline-block;
+  
+}
+.socialLink li img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.footerDiv{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.request label{
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+}
+.sec3 label{
+    width: 20%;
+}
+ .request ul{
+    list-style-type: none;
+}
+.provider ul{
+    list-style-type: none;
+}
+.provider label,.contact label{
+    display: inline-block;
+    width: 125%;
+    text-align: left;
+}
+.request input , textarea, select{
+    width: 300px;
+}
+main{
+    background-color: #f4f9f9;
+}
+.provider fieldset{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#FFFFFF;
+    opacity: .9;
+    border: none;
+}
+.request fieldset{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#FFFFFF;
+    opacity: .9;
+    border: none;
+}
+.provider{
+    background-image: url("https://www.houseology.com.au/wp-content/uploads/2017/02/Should-you-Hire-a-Professional-for-Home-Maintenance.jpg");
+    background-size: cover;
+}
+.provider section{
+padding-top: 5px;
+padding-left: 40px;
+padding-right: 50px;
+}
+.provider h2,p{
+    padding-left: 20px;
+}
+.contract{
+    padding-top: 10px;
+}
+.button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.request{
+    background-image:url("https://www.gnhlumber.com/wp-content/uploads/2018/01/home-maintenance-resolutions-2018.jpg");
+}
+.request h3{
+    margin-left: 100px;
+}
+.request h2{
+    margin-left: 90px;
+}
+.msec1 *{
+    margin-top: 10px;
+}
+.p1{
+    margin-left: 50px;
+}
+.msec2 *{
+    margin-top: 10px;
+}
+.sec3 input{
+    margin-right: 10px;
+}
+.contact fieldset {
+border: none;
+width: 400px;
+}
+
+.footerDiv p{
+    float: left;
+    margin-top: 60px;
+    color: #14423f;
+    font-family: cursive;
+}
+.footerDiv ul{
+    float: left;
+    padding:10px;
+    margin-left: 300px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 25px;
+}
+.footerDiv ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-family:cursive ; 
+    
+}
+.footerDiv ul li :hover{
+    border: 1px solid #336e6a;
+    border-radius: 150px;
+}
+.footerDiv img{
+    float: left;
+    padding: 1px;
+    margin-left: 1300px;
+      
+}
+.footerDiv ul li a{
+    text-decoration: none;
+    color:#0f2e2c;
+}
+
+.searchPage img{
+    width: 100%;
+    clear: both;
+}
+
+.searchPage h2{
+    text-align: center;
+}
+.searchPage p{
+    text-align: center;
+
+}
+.searchForm{
+    text-align: center;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.list li{
+    text-decoration: none;
+}
+
+
+.topBar{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color:#536039;
+    color: white;
+    
+
+}
+.topBar p{
+    font-size: small;
+
+}
+.topBar a{
+    text-decoration: none;
+    font-size: small;
+    color: white;
+}
+
+
+
+header{
+    position: absolute;
+    width: 100%;
+    background-color:#608613;
+    
+
+}
+.head{
+    position: relative;
+}
+
+.head img {
+    position: relative;
+    top:150px;
+    margin-left: 50px;
+
+}
+
+.head h1{
+    font-family: 'Akaya Kanadaka', cursive;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.head h6{
+    margin-left: 210px;
+    font-size: 15px;
+    top:10px;
+}
+
+.head ul{
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+    top: 60px;
+
+}
+
+
+.head ul li{
+    text-decoration: none;
+}
+.head ul li img{
+    
+    display: inline-block;
+    top: 0%;
+
+}
+.navigation {
+    position:relative ;
+    right: 0px;
+
+}
+.navigation ul li{
+    position: relative;
+    display: inline-block;
+    float: right;
+    top: 0px;
+    padding: 20px;
+    margin-right: 40px;
+    
+    
+}
+.navigation a{
+    text-decoration: none;
+    color: #1b1f13;
+    font-size: 20px;
+
+}
