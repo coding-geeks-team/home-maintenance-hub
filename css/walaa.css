@@ -1,4 +1,4 @@
-main {background-color: rgb(0,164,184);
+main {background-image: linear-gradient(rgb(139, 37, 139), rgb(144, 101, 155));
 }
  /* div {width: 90%; */
 margin-left: auto; 
@@ -115,7 +115,7 @@ input,textarea,select {
 
 button {  padding:10px;
   /* border-radius:15px; */
-background-color: rgb(0,164,184); 
+background-color: #EF4BF2; 
 width: 60%;}
 
 
@@ -129,12 +129,17 @@ color:whitesmoke;}
   font-size: 20px;
 text-align: center;
 margin-left: 8cm;
+margin-top: 20px;
 color:whitesmoke;} 
 
 .provider
 {margin-left: auto;
   margin-right: auto;
   align-content: center;}
+
+
+.form {padding-right: 200pxss;}
+
 
   
 .rounded-input {
@@ -274,7 +279,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -407,11 +412,12 @@ h3{
 }
 .js {background-color: #F2F2F2;
   display: inline-block;
-margin-left: 36%;
+margin-left: 28%;
 align-items: center;
+
 width:600px ;}
 
-.js button {background-color:rgb(161, 214, 214);
+.js button {background-color:#EF4BF2;
   color:black;
 margin-left: 20%;
 
