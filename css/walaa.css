@@ -1,4 +1,4 @@
-main {background-image: linear-gradient(rgb(146, 126, 146), rgb(178, 149, 185));
+main {background-color: lightgray;
 }
  /* div {width: 90%;
 margin-left: auto; 
@@ -110,7 +110,7 @@ input,textarea,select {
 
 button {  padding:10px;
   /* border-radius:15px; */
-background-color: #9f66a0; 
+background-color: #333652; 
 width: 60%;}
 
 
@@ -121,20 +121,21 @@ form span {font-weight: bold;font-size: 20px;}
 }
 .para1 h2 {
     clear: both;
-    margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -3%;
     margin-right: auto;
 
 }
  
- .para1 h2{text-align: center;font-weight: bold;font-size: 25px;padding-top: 200px;
-color:whitesmoke;}
+ .para1 h2{text-align: center;font-weight: bold;font-size: 25px;padding-top: 130px;
+color:rgb(134, 132, 132);}
 .para1 p {max-width: 60%;
   font-weight: 500;
   font-size: 20px;
 text-align: center;
-margin-left: 8cm;
+margin-left: 6.5cm;
 margin-top: 20px;
-color:whitesmoke;} 
+color:rgb(134, 132, 132);} 
 
 .provider
 {margin-left: auto;
@@ -268,7 +269,7 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background-image: linear-gradient(rgb(146, 126, 146), rgb(178, 149, 185));
+ background-color:lightgray;
 }
 
 .container {
@@ -290,7 +291,7 @@ body {
 #providerForm {
   background: #F9F9F9;
   padding: 25px;
-  margin: 150px 0;
+  margin: 85px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
