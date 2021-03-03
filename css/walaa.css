@@ -1,4 +1,4 @@
-main {background-image: linear-gradient(rgb(139, 37, 139), rgb(144, 101, 155));
+main {background-image: linear-gradient(rgb(146, 126, 146), rgb(178, 149, 185));
 }
  /* div {width: 90%; */
 margin-left: auto; 
@@ -115,7 +115,7 @@ input,textarea,select {
 
 button {  padding:10px;
   /* border-radius:15px; */
-background-color: #EF4BF2; 
+background-color: #9f66a0; 
 width: 60%;}
 
 
@@ -409,7 +409,12 @@ h3{
 
 .js ul  {list-style: none;
   padding-left: 15px;
+  font-weight: 500;
+ 
 }
+
+
+
 .js {background-color: #F2F2F2;
   display: inline-block;
 margin-left: 28%;
@@ -417,7 +422,7 @@ align-items: center;
 
 width:600px ;}
 
-.js button {background-color:#EF4BF2;
+.js button {background-color:#9f66a0;
   color:black;
 margin-left: 20%;
 
