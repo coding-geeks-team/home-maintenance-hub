@@ -197,7 +197,7 @@ if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
     if( num === verifyIn.value){
       alert('Successfully submited request');
       new MaintenanceRequest(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
-     console.log(category.value);
+    //  console.log(category.value);
       if(MaintenanceRequest.array){
         bouttonEl2.hidden=false;
         submit1.removeEventListener('click',handileSubmit );
@@ -226,6 +226,7 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
   let contractEl=document.getElementById('contract');
   let buttonEl=document.getElementById('button');
   let buttonEl2=document.createElement('button');
+  // buttonEl2.style('z-index',2)
   divEl.appendChild(buttonEl2);//Holy error
   buttonEl2.textContent = 'to show offers click here';
   buttonEl2.hidden=true;
@@ -305,7 +306,7 @@ console.log('constr' +this.craft);
 
     event.preventDefault();
     let naji=craftEl.value;
-    console.log(naji);
+    // console.log(naji);
     if( inputV === verify.value){
     //     alert('your form submit ');
     //     new Request(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category1.value,discription1.value,date1.value,mincost1.value,maxcost1.value);

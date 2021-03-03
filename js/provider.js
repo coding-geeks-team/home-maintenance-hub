@@ -1,5 +1,4 @@
 
-
 // let formEl=document.getElementById('providerForm');
 if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
   let name1 =document.getElementById('name1');
@@ -185,7 +184,3 @@ function getFormData () {
   { arrOfObjects1= getData1;}
 }
 getFormData();
-
-
-
-
