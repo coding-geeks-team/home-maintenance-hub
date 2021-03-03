@@ -196,6 +196,10 @@ if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
     event.preventDefault();
     if( num === verifyIn.value){
       alert('Successfully submited request');
+      console.log({name1})
+      console.log({contact1})
+      console.log({email1})
+      console.log({name1})
       new MaintenanceRequest(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
     //  console.log(category.value);
       if(MaintenanceRequest.array){

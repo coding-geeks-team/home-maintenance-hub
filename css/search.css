@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(rgb(146, 126, 146), rgb(178, 149, 185));
+
+}
+.d1 {
+    /* margin-top: 200px; */
+}
+form {
+    /* margin-top: 200px; */
+}

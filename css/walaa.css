@@ -268,7 +268,7 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background: #4CAF50;
+  background-image: linear-gradient(rgb(146, 126, 146), rgb(178, 149, 185));
 }
 
 .container {
@@ -436,3 +436,8 @@ font-size: 20px;}
 
 .f3 {font-size: 15px;
   font-weight: 500;}
+
+  .verify {
+    width: 90px;
+    height: 90px;
+}
