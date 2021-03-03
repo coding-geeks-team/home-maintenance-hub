@@ -7,6 +7,7 @@
     <title>Maintenance Request | Home Maintenance Hub</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/headerFooter.css">
+    <link rel="stylesheet" href="/css/maintenance.css">
 </head>
 <body>
     <header>
@@ -29,54 +30,32 @@
             </div>
         </div>
     </header>
-    <main>
-        <div>
-            <img src="" alt="Banner">
-            <h2>Request Service</h2>
-            <p>Services from Home Maintenance Hub are trusted, reliable, affordable and professional. Please fill out the form completely, and we will connect you with the best service provider near you.</p>
-        </div>
-        <div>
-            <form id="requestForm">
-                <fieldset>
-                    <h2>Request Form</h2>
-                    <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
-                    <section>
-                        <h3>Step 1: Tell us about you</h3>
-                        <ul>
-                            <li>
-                                <label for="name" >
-                                    <span>Name: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="text" id="name1" name="username" required>
-                            </li>
-                            <li>
-                                <label for="contact">
-                                    <span>Contact Number: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="tel" id="contact1" name="contactnumber" required>
-                            </li>
-                            <li>
-                                <label for="email">
-                                    <span>Email: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="email" id="email1" name="email" required>
-                            </li>
-                            <li>
-                                <label for="address">
-                                    <span>Address: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <textarea type="textarea" id="address1" name="address" required></textarea>
-                            </li>
-                            <li>
-                                <label for="city">
-                                    <span>City: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <select name="city" id="city1" required>
+    <main>        <div class="Providers">
+        <!-- <img src="" alt="Banner"> -->
+        <h2>Request Service</h2>
+        <p>Services from Home Maintenance Hub are trusted, reliable, affordable and professional. Please fill out the form completely, and we will connect you with the best service provider near you.</p>
+    </div>
+    <div  class="container" >
+        <form id="requestForm" >
+            <fieldset>
+                <h2>Request Form</h2>                    <section>
+                    <h3>Step 1: Tell us about you</h3>
+                    <div class='section'>
+                        <div>
+                            <label for="name" >                                </label>
+                            <input placeholder=" Name :" class="contact" type="text" id="name1" name="username" required>                            </div>
+                           <div>
+                            <label for="contact">                                </label>
+                            <input placeholder=" Contact Number :" class="contact" type="tel" id="contact1" name="contactnumber" required>                               </div>                               <div>
+                            <label for="email">                                </label>
+                            <input placeholder=" Email :" class="contact" type="email" id="email1" name="email" required>
+                           </div>                                <div>
+                                <label for="address">                                    </label>
+                                <textarea placeholder=" Address :" class="contact" type="textarea" id="address1" name="address" required></textarea>                                </div>
+                            <div class="city">
+                                <label for="city" >
+                                    <span> City : </span>                                    </label>
+                                <select class="contact" name="city" id="city1" required>
                                     <option value="Amman">Amman</option>
                                     <option value="Irbid">Irbid</option>
                                     <option value="Zarqa">Zarqa</option>
@@ -90,94 +69,52 @@
                                     <option value="Madaba">Madaba</option>
                                     <option value="Azraq">Azraq</option>
                                 </select>
-                            </li>
-                            <li>
-                                <label for="reach">
-                                    <span>How did you hear about us? </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <select name="reach" id="reach" required>
-                                    <option value="TV">TV</option>
-                                    <option value="Radio">Radio</option>
-                                    <option value="Newspaper">Newspaper</option>
-                                    <option value="Friend">Friend</option>
-                                    <option value="Social Media">Social Media</option>
-                                    <option value="Internet Search">Internet Search</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Step 2: Tell us about the service you are requesting</h3>
-                        <ul>
-                            <li>
-                                <label for="category">
-                                    <span>Service Category: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <select name="category" id="category" required>
-                                    <option value="Electrical">Electrical</option>
-                                    <option value="Painting">Painting</option>
-                                    <option value="Plumbing">Plumbing</option>
-                                    <option value="Surfaces & Floor">Surfaces & Floor</option>
-                                    <option value="Kitchen">Kitchen</option>
-                                    <option value="Doors & Windows">Doors & Windows</option>
-                                    <option value="Garden">Garden</option>
-                                </select>
-                            </li>
-                            <li>
-                                <label for="discription">
-                                    <span>Service Discription: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <textarea type="textarea" id="discription" name="discription" required></textarea>
-                            </li>
-                            <li>
-                                <label for="date">
-                                    <span>Appointment Date: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="date" id="date" name="date" required>
-                            </li>
-                            <li>
-                                <label for="mincost">
-                                    <span>Minimum Cost: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="number" id="mincost" name="mincost" min="0" required>
-                            </li>
-                            <li>
-                                <label for="maxcost">
-                                    <span>Maximum Cost: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="number" id="maxcost" name="maxcost" min="0" required>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Step 3: Verify that you are not a ropot</h3>
-                        <p>
-                            <label for="verify">
-                                <span>Copy the numbers and letters you see below into the text field: </span>
-                                <strong><abbr title="required">*</abbr></strong>
-                            </label>
-                            <img src="" alt="Verify">
-                            <input type="text" id="verify" name="verify" required>
-                        </p>
-                        <button id="button" type="submit">Submit Request</button>
-                    </section>
-                </fieldset>
-            </form>
-        </div>
-        <div id="ul">
-            <!-- listformaddin js -->
-        </div>
-        <div id="x"> 
-            
-        </div>
-    </main>
+                            </div>                                <label for="reach">
+                                <span> How did you hear about us ? </span>                                </label>
+                            <select class="contact" name="reach" id="reach" required>
+                                <option value="TV">TV</option>
+                                <option value="Radio">Radio</option>
+                                <option value="Newspaper">Newspaper</option>
+                                <option value="Friend">Friend</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Internet Search">Internet Search</option>
+                                <option value="Other">Other</option>
+                            </select>                        </div>                    <section>
+                    <h3>Step 2: Tell us about the service you are requesting</h3>                            <div class="category">
+                            <label for="category">
+                                <span>Service Category : </span>                                </label>
+                            <select class="contact" name="category" id="category" required>
+                                <option value="Electrical">Electrical</option>
+                                <option value="Painting">Painting</option>
+                                <option value="Plumbing">Plumbing</option>
+                                <option value="Surfaces & Floor">Surfaces & Floor</option>
+                                <option value="Kitchen">Kitchen</option>
+                                <option value="Doors & Windows">Doors & Windows</option>
+                                <option value="Garden">Garden</option>
+                            </select>                            </div>                                <label for="discription">                                </label>
+                            <textarea placeholder=" Service Discription :" class="contact" type="textarea" id="discription" name="discription" required></textarea>
+                     <div class="date">                             <label for="date">
+                             <span> Appointment Date : </span>
+                             <strong><abbr title="required"></abbr></strong>
+                         </label>
+                         <input class="contact" type="date" id="date" name="date" required>                         </div>
+                            <label for="mincost">                                </label>
+                            <input placeholder=" Minimum Cost :" class="contact" type="number" id="mincost" name="mincost" min="0" required>                                <label for="maxcost">                                </label>
+                            <input placeholder=" Maximum Cost :" class="contact" type="number" id="maxcost" name="maxcost" min="0" required>                    </section>
+                <section>
+                    <h3>Step 3: Verify that you are not a ropot</h3>
+                    <p>
+                        <label for="verify">                            </label>
+                        <img class="verify" src="https://thumbs.dreamstime.com/b/wooden-toy-block-36425617.jpg" alt="Verify">
+                        <input placeholder=" Type the numbers you see in the picture  :" class="contact" type="text" id="verify" name="verify" required>
+                    </p>
+                    <button class="contact" id="button" type="submit">Submit Request</button>
+                </section>
+            </fieldset>
+        </form>
+    </div>        <div id="x" class="ul">             <!-- listformaddin js -->
+    </div>  
+</main>
     <footer>
         <div class="footercontainer">
          <div class="leftfooter">
