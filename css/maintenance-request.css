@@ -20,13 +20,14 @@ body {
   line-height: 30px;
   color: #777;
   background: rgb(0,164,184);
+  background-color: #19231A;
 }
 
 .container {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 
 #requestForm input[type="text"],
@@ -73,7 +74,7 @@ fieldset {
 #requestForm input[type="url"],
 #requestForm textarea {
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -162,12 +163,29 @@ fieldset {
     list-style-type: none;
 }
 .Providers {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
     text-align: center;
     color: black;
     
     font-size: 20px;
 }
 .Providers p {
-    margin-top: 30px;
+  clear: both;
+    margin-top: 150px;
     font-size: 30px;
+    color: wheat;
+}
+.verify {
+  margin-left: 36%;
+}
+.city {
+  margin-left: 35%;
+}
+.category {
+  margin-left: 15%;
+}
+.date {
+  margin-left: 20%;
 }

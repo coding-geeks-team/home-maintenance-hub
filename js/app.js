@@ -7,7 +7,7 @@ if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
   let address1 =document.getElementById('address1');
   let city1 =document.getElementById('city1');
   let reach1 =document.getElementById('reach');
-  let category1 =document.getElementById('category');
+  let category =document.getElementById('category');
   let discription1 =document.getElementById('discription');
   let date1 =document.getElementById('date');
   let mincost1 =document.getElementById('mincost');
@@ -47,12 +47,15 @@ if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
     let fieldsetEl =document.createElement('fieldset');
     divEl.appendChild(fieldsetEl);
 
-    let h3El=document.createElement('h3');
-    fieldsetEl.appendChild(h3El);
-    h3El.textcontent=`Maintenance Request Gategory: ${renderdobj.category}`;
+
 
     let ulEl =document.createElement('ul');
     fieldsetEl.appendChild(ulEl);
+
+    let liElx=document.createElement('li');// changed form h3 to li
+    ulEl.appendChild(liElx);
+    liElx.textContent=`Maintenance Request Gategory: ${renderdobj.category}`;
+    //console.log(renderdobj.category);
 
     let liEl=document.createElement('li');
     ulEl.appendChild(liEl);
@@ -88,7 +91,7 @@ if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
 
     let liEl7=document.createElement('li');
     ulEl.appendChild(liEl7);
-    liEl7.textContent=`minimum Cost: ${renderdobj.minCost}`;
+    liEl7.textContent=`Minimum Cost: ${renderdobj.minCost}`;
 
     let liEl8=document.createElement('li');
     ulEl.appendChild(liEl8);
@@ -100,12 +103,13 @@ if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
   function render (renderedObj){
     let fieldsetEl=document.createElement('fieldset');
     divEl.appendChild(fieldsetEl);
-    let h3El=document.createElement('h3');
-    fieldsetEl.appendChild(h3El);
-    h3El.textcontent= `Service Provider Craft: ${renderedObj.craft}`;
 
     let ulEl =document.createElement('ul');
     fieldsetEl.appendChild(ulEl);
+
+    let liElc=document.createElement('li');//Change made here h3 to li
+    ulEl.appendChild(liElc);
+    liElc.textContent= `Service Provider Craft: ${renderedObj.craft}`;
 
     let liEl=document.createElement('li');
     ulEl.appendChild(liEl);
@@ -192,9 +196,11 @@ if(window.document.title==='Maintenance Request | Home Maintenance Hub'){
     event.preventDefault();
     if( num === verifyIn.value){
       alert('Successfully submited request');
-      new MaintenanceRequest(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category1.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
+      new MaintenanceRequest(name1.value,contact1.value,email1.value,address1.value,city1.value,reach1.value,category.value,discription1.value,date1.value,mincost1.value,maxcost1.value);
+     console.log(category.value);
       if(MaintenanceRequest.array){
         bouttonEl2.hidden=false;
+        submit1.removeEventListener('click',handileSubmit );
       }
     }else{
       alert('Please try again!');
@@ -243,7 +249,7 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
     this.days=days();
     this.shifts=shifts();
     arrOfObjects1.push(this);
-
+console.log('constr' +this.craft);
     setFormData();
 
   }
@@ -307,6 +313,7 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
       confirm ('Thank you,  we have received your information and it is being processed');
 
       if(arrOfObjects1){buttonEl2.hidden=false;}
+      buttonEl.removeEventListener('click',submitButton);
     }else{
       alert('please try again ');
     }
@@ -319,40 +326,42 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
   function render (renderedObj){
     let fieldsetEl=document.createElement('fieldset');
     divEl.appendChild(fieldsetEl);
-    let h3El=document.createElement('h3');
-    fieldsetEl.appendChild(h3El);
-    h3El.textcontent= ` ${renderedObj.craft}  `;
 
     let ulEl =document.createElement('ul');
     fieldsetEl.appendChild(ulEl);
+
+    let liEln=document.createElement('li');
+    ulEl.appendChild(liEln);
+    liEln.textContent= `Service Provider Craft: ${renderedObj.craft}`;
+
     let liEl=document.createElement('li');
     ulEl.appendChild(liEl);
-    liEl.textContent=`${renderedObj.name}`;
+    liEl.textContent=`Service Provider Name: ${renderedObj.name}`;
 
     let liEl2=document.createElement('li');
     ulEl.appendChild(liEl2);
-    liEl2.textContent=`${renderedObj.contact}`;
+    liEl2.textContent=`Service Provider Contact Number: ${renderedObj.contact}`;
 
     let liEl3=document.createElement('li');
     ulEl.appendChild(liEl3);
-    liEl3.textContent=`${renderedObj.email}`;
+    liEl3.textContent=`Service Provider Email: ${renderedObj.email}`;
 
     let liEl4=document.createElement('li');
     ulEl.appendChild(liEl4);
-    liEl4.textContent=`${renderedObj.city}`;
+    liEl4.textContent=`Service Provider City: ${renderedObj.city}`;
 
     let liEl5=document.createElement('li');
     ulEl.appendChild(liEl5);
-    liEl5.textContent=`${renderedObj.contract}`;
+    liEl5.textContent=`Service Provider Contract${renderedObj.contract}`;
 
     let liEl6=document.createElement('li');
     ulEl.appendChild(liEl6);
     //here is bug !!!!
-    liEl6.textContent=`${availableDayes}`;
+    liEl6.textContent=` Service Provider Day Availability: ${availableDayes}`;
 
     let liEl7=document.createElement('li');
     ulEl.appendChild(liEl7);
-    liEl7.textContent=`${availableShift}`;
+    liEl7.textContent=`Service Provider Shift Availability: ${availableShift}`;
   }
 
    ////////////////////render function (outter loop)////////////////////
@@ -360,12 +369,12 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
     let fieldsetEl =document.createElement('fieldset');
     divEl.appendChild(fieldsetEl);
 
-    let h3El=document.createElement('h3');
-    fieldsetEl.appendChild(h3El);
-    h3El.textcontent=`Maintenance Request Gategory: ${renderdobj.category}`;
-
     let ulEl =document.createElement('ul');
     fieldsetEl.appendChild(ulEl);
+    
+    let liElm=document.createElement('li');
+    ulEl.appendChild(liElm);
+    liElm.textContent=`Maintenance Request Gategory: ${renderdobj.category}`;
 
     let liEl=document.createElement('li');
     ulEl.appendChild(liEl);
@@ -389,7 +398,7 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
 
     let liEl5=document.createElement('li');
     ulEl.appendChild(liEl5);
-    liEl5.textContent=` How did your hear about us: ${renderdobj.reach}`;
+    liEl5.textContent=`How did your hear about us: ${renderdobj.reach}`;
 
     let liEl6=document.createElement('li');
     ulEl.appendChild(liEl6);
@@ -401,7 +410,7 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
 
     let liEl7=document.createElement('li');
     ulEl.appendChild(liEl7);
-    liEl7.textContent=`minimum Cost: ${renderdobj.minCost}`;
+    liEl7.textContent=`Minimum Cost: ${renderdobj.minCost}`;
 
     let liEl8=document.createElement('li');
     ulEl.appendChild(liEl8);
@@ -417,10 +426,12 @@ if(window.document.title==='Service Providers | Home Maintenance Hub'){
     getFormData ();//provider
     // Nested loops for Complex rendering: Calling render request in the inner loop
     for(let i=0 ; i<arrOfObjects1.length ;i++){
-      render1(arrOfObjects1[i]);//Render Provider
+      render(arrOfObjects1[i]);//Render Provider
+
       for(let j=0; j<getdata.length;j++){
+        console.log('for :'+ arrOfObjects1[i].craft + ' n ' +getdata[j].category);///////
         if(arrOfObjects1[i].craft===getdata[j].category)// checking category===?craft
-          render(getdata[j]);// Rendering Request
+          render1(getdata[j]);// Rendering Request
       }
     }
     buttonEl2.removeEventListener('click',showButton);

@@ -4,127 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Home Maintenance Hub</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/headerFooterStyle.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Maintenance Request | Home Maintenance Hub</title>
 </head>
 <body>
     <header>
-        <div class="topBar">
-            <p>Your health and safety are our highest priority during this time.
-            <a href="contact-us.html">Click here for our precautionary measures.</a>
-            </p>
-            
-        </div>
         <div class="head">
-            <img src="" alt="Logo Image">
-            <h1>Home Maintenance Hub</h1>
-            <h6>Connecting Homeowners with Service Providers</h6>
-            <ul>
-                <li><img src="" alt="Tweeter"></li>
-                <li><img src="" alt="Facebook"></li>
-                <li><img src="" alt="Instagram"></li>
-            </ul>
-            <p></p>
-        </div>
-        <div class="navigation">
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="maintenance-request.html">Maintenance Request</a></li>
-                    <li><a href="service-providers.html">Service Providers</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="search.html">Search</a></li>
-                </ul>
-            </nav>
+            <img src="/images/logo.png" alt="Logo Image">
+            <div class="title">
+                <h1>Home Maintenance Hub</h1>
+                <h6>Connecting Homeowners with Service Providers</h6>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/maintenance-request.html">Maintenance Request</a></li>
+                        <li><a href="/pages/service-providers.html">Service Providers</a></li>
+                        <li><a href="/pages/contact-us.html">Contact Us</a></li>
+                        <li><a href="/pages/search.html">Search</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <div>
-            <img src="" alt="Banner">
-            <h2>Contact Us</h2>
-            <p>Home Maintenance Hub is closely monitoring COVID-19 and its impact in our community. The health and safety of our customers is our highest priority during this time. While we cannot control the severity or unpredictability of this virus, we can take preventive measures to limit the spread and impact of COVID-19. We are currently acting with prudence in our day-to-day operation with basic preventative safety measures following the guidance set forth by the Jordanian Government, World Health Organizationand other health agencies, including:</p>
-            <ul>
-                <li>Cleaning hands with soap often, for at least 20 seconds.</li>
-                <li>Using an alcohol-based hand sanitizer when soap and water are not available.</li>
-                <li>Keeping the recommended 6 feet distance from people.</li>
-                <li>Cleaning frequently touched surfaces.</li>
-                <li>Covering cough or sneeze with a tissue, then throwing tissue in the trash.</li>
-                <li>Wearing a face mask.</li>
-                <li>Staying home when sick.</li>
-            </ul>
-            <p>We encourage our customers to let us know in advance of an appointment if there are any concerns or they would like us to take special precautions. We will continue to closely monitor the situation surrounding the COVID-19 coronavirus and act accordingly. We hope this alleviates any concerns you may have when choosing Home Maintenance Hub. Our Team Members  and Service Providers are ready to continue to provide you an Exceptional Experience.</p>
-        </div>
-        <div>
-            <P>Phone Number: +962-786-324-328</P>
-            <p>Email: info@hmhub.com</p>
-            <p>Address: Amman Street, Irbid, Jordan</p>
-        </div>
-        <div>
-            <form class="contact" action="">
-                <fieldset>
-                    <section>
-                        <h3>Step 1: Tell us about you & your message</h3>
-                        <ul>
-                            <li>
-                                <label for="name">
-                                    <span>Name: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="text" id="name2" name="username">
-                            </li>
-                            <li>
-                                <label for="contact">
-                                    <span>Contact Number: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="tel" id="contact2" name="contactnumber">
-                            </li>
-                            <li>
-                                <label for="email">
-                                    <span>Email: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input type="email" id="email2" name="email">
-                            </li>
-                            <li>
-                                <label for="msg">
-                                    <span>Your Message: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <textarea type="textarea" id="msg" name="msg"></textarea>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Step 2: Verify that you are not a ropot</h3>
-                        <p>
-                            <label for="verify">
-                                <span>Copy the numbers and letters you see below into the text field: </span>
-                                <strong><abbr title="required">*</abbr></strong>
-                            </label>
-                            <img src="" alt="Verify">
-                            <input type="text" id="verify2" name="verify">
-                        </p>
-                        <div class="">
-                        <button type="submit">Send Message</button>
-                    </div>
-                    </section>
-                </fieldset>
+        <div class="mainDiv">
+        <div class="container">  
+            <form id="contact">
+              <h3> Contact Form</h3>
+              <h4>Contact us for custom quote</h4>
+              <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit">Submit</button>
+              </fieldset>
             </form>
+          </div>
+          <div class="team" id="team">
+            <div class="container2">
+                <h3 class="title">Coding Geeks Team</h3>
+                <div class="team-grids">
+                    <div class="col-xs-4 team-grid">
+                        <div class="pic">
+                            <div class="stack twisted">
+                                <img src="/images/duha.PNG" alt=" " class="img-responsive">
+                            </div>
+                        </div>
+                        <h4>Duha Al-Azzm</h4>
+                    </div>
+                    <div class="col-xs-4 team-grid">
+                        <div class="pic">
+                            <div class="stack twisted">
+                                <img src="/images/mhmd.PNG" alt=" " class="img-responsive">
+                            </div>
+                        </div>
+                        <h4>Mohammad Adnan Al-Azzam</h4>
+                    </div>
+                    <div class="col-xs-4 team-grid">
+                        <div class="pic">
+                            <div class="stack twisted">
+                                <img src="/images/naji.PNG" alt=" " class="img-responsive">
+                            </div>
+                        </div>
+                        <h4>Naji Al-Batayneh</h4>
+                    </div>
+                    <div class="col-xs-4 team-grid">
+                        <div class="pic">
+                            <div class="stack twisted">
+                                <img src="/images/sukyna.PNG" alt=" " class="img-responsive">
+                            </div>
+                        </div>
+                        <h4>Sukayna Ghnemat </h4>
+                    </div>
+                    <div class="col-xs-4 team-grid">
+                        <div class="pic">
+                            <div class="stack twisted">
+                                <img src="/images/walaa.PNG" alt=" " class="img-responsive">
+                            </div>
+                        </div>
+                        <h4>Walaa' Al-Omari</h4>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
         </div>
+    </div>
     </main>
     <footer>
-        <div class="footerDiv">
-        <p>Copyright &copy; Home Maintenance Hub, All rights reserved 2021.</p>
-        <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="accessibility.html">Accessibility</a></li>
-        </ul>
-        <img src="" alt="Coding Geeks">
+        <div class="footercontainer">
+         <div class="leftfooter">
+             <ul>
+                 <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                 <li><a href="/pages/terms.html">Terms of Use</a></li>
+                 <li><a href="/pages/accessibility.html">Accessibility</a></li>
+             </ul>
+             <p>All rights reserved &copy; Home Maintenance Hub 2021</p>
+         </div>
+         <div class="rightfooter">
+             <ul class="socialLink">
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/twe.png" alt="Tweeter"></a></li>
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/f.png" alt="Facebook"></a></li>
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/inst.png" alt="Instagram"></a></li>
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/linkin.png" alt="LinkedIn"></a></li>
+             </ul>
+             <img src="/images/coding geeks.png" alt="Coding Geeks" class="footerimg">
+         </div>
         </div>
-    </footer>
-    
+     </footer>
 </body>
+
+    
+
+
 </html>

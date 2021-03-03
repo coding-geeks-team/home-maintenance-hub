@@ -4,43 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="/css/headerFooterStyle.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="/css/maintenance-request.css">
     <title>Maintenance Request | Home Maintenance Hub</title>
 </head>
 <body>
     <header>
-        <div>
-            <p>Your health and safety are our highest priority during this time.</p>
-            <a href="contact-us.html">Click here for our precautionary measures.</a>
-        </div>
-        <div>
-            <img src="" alt="Logo Image">
-            <h1>Home Maintenance Hub</h1>
-            <h6>Connecting Homeowners with Service Providers</h6>
-            <ul>
-                <li><img src="" alt="Tweeter"></li>
-                <li><img src="" alt="Facebook"></li>
-                <li><img src="" alt="Instagram"></li>
-            </ul>
-            <p></p>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="maintenance-request.html">Maintenance Request</a></li>
-                    <li><a href="service-providers.html">Service Providers</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="search.html">Search</a></li>
-                </ul>
-            </nav>
+        <div class="head">
+            <img src="/images/logo.png" alt="Logo Image">
+            <div class="title">
+                <h1>Home Maintenance Hub</h1>
+                <h6>Connecting Homeowners with Service Providers</h6>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/maintenance-request.html">Maintenance Request</a></li>
+                        <li><a href="/pages/service-providers.html">Service Providers</a></li>
+                        <li><a href="/pages/contact-us.html">Contact Us</a></li>
+                        <li><a href="/pages/search.html">Search</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
 
         <div class="Providers">
-            <!-- <img src="" alt="Banner"> -->
             <h2>Request Service</h2>
             <p>Services from Home Maintenance Hub are trusted, reliable, affordable and professional. Please fill out the form completely, and we will connect you with the best service provider near you.</p>
         </div>
@@ -56,14 +48,14 @@
                                 <label for="name" >
                                    
                                 </label>
-                                <input placeholder="Name" class="contact" type="text" id="name1" name="username" required>
+                                <input placeholder=" Name :" class="contact" type="text" id="name1" name="username" required>
                             
                             </div>
                                <div>
                                 <label for="contact">
                                    
                                 </label>
-                                <input placeholder="Contact Number:" class="contact" type="tel" id="contact1" name="contactnumber" required>
+                                <input placeholder=" Contact Number :" class="contact" type="tel" id="contact1" name="contactnumber" required>
                             
                                </div>
                             
@@ -71,19 +63,19 @@
                                 <label for="email">
                                     
                                 </label>
-                                <input placeholder="Email:" class="contact" type="email" id="email1" name="email" required>
+                                <input placeholder=" Email :" class="contact" type="email" id="email1" name="email" required>
                                </div>
                             
                                 <div>
                                     <label for="address">
                                        
                                     </label>
-                                    <textarea placeholder="Address:" class="contact" type="textarea" id="address1" name="address" required></textarea>
+                                    <textarea placeholder=" Address :" class="contact" type="textarea" id="address1" name="address" required></textarea>
                                 
                                 </div>
-                                <div>
-                                    <label for="city">
-                                        <span>City: </span>
+                                <div class="city">
+                                    <label for="city" >
+                                        <span> City : </span>
                                         
                                     </label>
                                     <select class="contact" name="city" id="city1" required>
@@ -104,7 +96,7 @@
                         
                             
                                 <label for="reach">
-                                    <span>How did you hear about us? </span>
+                                    <span> How did you hear about us ? </span>
                                     
                                 </label>
                                 <select class="contact" name="reach" id="reach" required>
@@ -122,9 +114,9 @@
                     <section>
                         <h3>Step 2: Tell us about the service you are requesting</h3>
                         
-                            
+                            <div class="category">
                                 <label for="category">
-                                    <span>Service Category: </span>
+                                    <span>Service Category : </span>
                                     
                                 </label>
                                 <select class="contact" name="category" id="category" required>
@@ -136,27 +128,31 @@
                                     <option value="Doors & Windows">Doors & Windows</option>
                                     <option value="Garden">Garden</option>
                                 </select>
+
+                            </div>
                          
                                 <label for="discription">
                                  
                                 </label>
-                                <textarea placeholder="Service Discription:" class="contact" type="textarea" id="discription" name="discription" required></textarea>
-                         
-                                <label for="date">
-                                    <span>Appointment Date: </span>
-                                    <strong><abbr title="required">*</abbr></strong>
-                                </label>
-                                <input class="contact" type="date" id="date" name="date" required>
-                          
+                                <textarea placeholder=" Service Discription :" class="contact" type="textarea" id="discription" name="discription" required></textarea>
+                         <div class="date">
+
+                             <label for="date">
+                                 <span> Appointment Date : </span>
+                                 <strong><abbr title="required"></abbr></strong>
+                             </label>
+                             <input class="contact" type="date" id="date" name="date" required>
+                       
+                         </div>
                                 <label for="mincost">
                                  
                                 </label>
-                                <input placeholder="Minimum Cost:" class="contact" type="number" id="mincost" name="mincost" min="0" required>
+                                <input placeholder=" Minimum Cost :" class="contact" type="number" id="mincost" name="mincost" min="0" required>
                          
                                 <label for="maxcost">
                                  
                                 </label>
-                                <input placeholder="Maximum Cost:" class="contact" type="number" id="maxcost" name="maxcost" min="0" required>
+                                <input placeholder=" Maximum Cost :" class="contact" type="number" id="maxcost" name="maxcost" min="0" required>
                         
                         
                     </section>
@@ -167,7 +163,7 @@
                                
                             </label>
                             <img class="verify" src="https://thumbs.dreamstime.com/b/wooden-toy-block-36425617.jpg" alt="Verify">
-                            <input placeholder="Copy the numbers and letters you see below into the text field:" class="contact" type="text" id="verify" name="verify" required>
+                            <input placeholder=" Type the numbers you see in the picture  :" class="contact" type="text" id="verify" name="verify" required>
                         </p>
                         <button class="contact" id="button" type="submit">Submit Request</button>
                     </section>
@@ -181,14 +177,26 @@
         </div>  
     </main>
     <footer>
-        <p>Copyright &copy; Home Maintenance Hub, All rights reserved 2021.</p>
-        <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="accessibility.html">Accessibility</a></li>
-        </ul>
-        <img src="" alt="Coding Geeks">
-    </footer>
+        <div class="footercontainer">
+         <div class="leftfooter">
+             <ul>
+                 <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                 <li><a href="/pages/terms.html">Terms of Use</a></li>
+                 <li><a href="/pages/accessibility.html">Accessibility</a></li>
+             </ul>
+             <p>All rights reserved &copy; Home Maintenance Hub 2021</p>
+         </div>
+         <div class="rightfooter">
+             <ul class="socialLink">
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/twe.png" alt="Tweeter"></a></li>
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/f.png" alt="Facebook"></a></li>
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/inst.png" alt="Instagram"></a></li>
+                 <li><a href="https://github.com/coding-geeks-team"><img src="/images/linkin.png" alt="LinkedIn"></a></li>
+             </ul>
+             <img src="/images/coding geeks.png" alt="Coding Geeks" class="footerimg">
+         </div>
+        </div>
+     </footer>
     <!-- <script src="/js/provider.js"></script> -->
     <script src="/js/app.js"></script>
 
