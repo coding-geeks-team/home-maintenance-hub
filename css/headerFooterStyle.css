@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;;
+    position:fixed;
+    /* background-color:rgb(27, 26, 26); */
+    background-color:#333652;
+
+}
+
+.head{
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.head img {
+    float: left;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.title{
+    float: left;
+    margin-top: 10px;
+    height: 60px;
+}
+
+.title h1{
+    position: relative;
+    margin-left: 5px;
+    margin-top: 8px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+    color: #E9EAEC;
+}
+
+
+.navigation {
+    float: left;
+    margin-top: 5px;
+    margin-left: 100px;
+    width: 65%;
+}
+
+.navigation nav ul{
+    float: left;
+    margin-left: 100px;
+    margin-top: 28px;
+}
+
+.navigation nav ul li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-family:cursive;
+}
+
+.navigation nav ul li:hover{
+    color: #333652;
+    background-color: #E9EAEC;
+}
+
+.navigation a{
+    text-decoration: none;
+    color:#E9EAEC;
+    font-weight:bold;
+    font-size: medium;
+}
+
+.navigation a:hover{
+    color:#333652;
+}
+
+/* Footer */
+footer{
+    clear: both;
+    position: relative;
+    background-color:#333652;
+    height: 100px;
+}
+
+.footercontainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftfooter{
+    float: left;
+    width: 80%;
+}
+
+.rightfooter{
+    float: left;
+    width: 20%;
+}
+
+.leftfooter p{
+    float: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    color:lightgray;
+    font-family:cursive;
+}
+
+.leftfooter ul{
+    float: left;
+    margin-top: 35px;
+    margin-right: 80px;
+}
+
+.leftfooter ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.leftfooter ul li a{
+    text-decoration: none;
+    color: #E9EAEC;
+    font-family:cursive;
+    font-size: small;
+}
+
+.rightfooter ul{
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.rightfooter ul li{
+    display: inline-block;
+    padding: 2px;
+}
+
+.rightfooter ul li a img{
+    width: 25px;
+    height: 25px;
+}
+
+.footerimg{
+    width: 60px;
+    height: 60px;
+    margin-left: 80px;
+}
